@@ -1,4 +1,4 @@
-const log = require('./index.js').TangerineLog
+const log = require('./index.js').log
 // clog function is a shortcut to output messages with LOG_LEVEL_DEBUG. It's also an easy thing to grep for since you 
 // shouldn't have debug messages in your codebase.
 const clog = require('./index.js').clog

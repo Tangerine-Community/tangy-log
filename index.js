@@ -4,7 +4,7 @@ const LOG_LEVEL_WARNING = 'WARNING'
 const LOG_LEVEL_ERROR = 'ERROR'
 const LOG_LEVEL_DEBUG = 'DEBUG'
 
-const log = function(level = LOG_LEVEL_INFO, message = '') {
+const out = function(level = LOG_LEVEL_INFO, message = '') {
   const dateTime = new Date().toISOString()
   // Line details example from https://stackoverflow.com/a/39684350
   let logLineDetails = ((new Error().stack).split("at ")[3]).trim();
@@ -38,20 +38,20 @@ const log = function(level = LOG_LEVEL_INFO, message = '') {
 }
 
 exports.clog = function(message) {
-  log(LOG_LEVEL_DEBUG, message)
+  out(LOG_LEVEL_DEBUG, message)
 }
 
-exports.TangerineLog = {
+exports.log = {
   info: function(message) {
-    log(LOG_LEVEL_INFO, message)
+    out(LOG_LEVEL_INFO, message)
   },
   warn: function(message) {
-    log(LOG_LEVEL_WARNING, message)
+    out(LOG_LEVEL_WARNING, message)
   },
   error: function(message) {
-    log(LOG_LEVEL_ERROR, message)
+    out(LOG_LEVEL_ERROR, message)
   },
   debug: function(message) {
-    log(LOG_LEVEL_DEBUG, message)
+    out(LOG_LEVEL_DEBUG, message)
   }
 }
