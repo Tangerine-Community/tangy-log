@@ -1,0 +1,26 @@
+{
+  "name": "tangy-log",
+  "version": "1.0.0",
+  "description": "An alternative to console.log(), console.info(), console.error(), console.warn() that contains line number/file and timestamps",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^2.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tangerine-Community/tangy-log.git"
+  },
+  "keywords": [
+    "logging"
+  ],
+  "author": "R.J. Steinert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tangerine-Community/tangy-log/issues"
+  },
+  "homepage": "https://github.com/Tangerine-Community/tangy-log#readme"
+}
