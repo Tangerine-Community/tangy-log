@@ -18,5 +18,7 @@ log.debug({ interesting: 'giraffe'})
 clog({ happy: 'tiger'})
 ```
 
+Log messages are formatted like `<timestamp> <context> <type> <message>`.
+
 Output looks like...
 ![example output](example-output.png)
